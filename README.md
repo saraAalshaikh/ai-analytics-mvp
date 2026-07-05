@@ -1,1 +1,1 @@
-# mms-team
+# ai-analytics-mvp 

@@ -1,9 +1,13 @@
-#base Agent
 from abc import ABC, abstractmethod
 from typing import Any, Dict
 
 
 class BaseAgent(ABC):
+    """
+    Abstract base class for all AI agents.
+    Every agent in the platform must inherit from this class.
+    """
+
     def __init__(self, name: str, description: str):
         self.name = name
         self.description = description
@@ -16,8 +20,9 @@ class BaseAgent(ABC):
             "status": self.status,
         }
 
+    @abstractmethod
     def validate_input(self, input_data: Dict[str, Any]) -> bool:
-        return isinstance(input_data, dict)
+        pass
 
     @abstractmethod
     def run(self, input_data: Dict[str, Any]) -> Dict[str, Any]:

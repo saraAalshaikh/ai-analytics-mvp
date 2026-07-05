@@ -216,3 +216,33 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ==========================
+# AI Analytics Platform
+# ==========================
+
+# Uploaded datasets
+uploads/
+
+# Generated reports
+outputs/
+
+# Temporary files
+temp/
+
+# Model files
+models/
+
+# Logs
+logs/
+
+# Local configuration
+config.local.py
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
